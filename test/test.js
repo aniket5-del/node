@@ -6,7 +6,7 @@ describe('GET /', function() {
     request(app)
       .get('/nonexistentpage')
       .expect(404)
-      .end(function(err, res) {
+      .end(function(err, ress) {
         if (err) {
           // If there's an error, log it and pass it to the done callback
           console.error(err);
